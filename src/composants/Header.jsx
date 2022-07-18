@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 
 export default function Header(){
+    
     return(
         <div className='Head'>
             <section className='navApp'>

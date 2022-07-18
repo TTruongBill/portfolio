@@ -1,0 +1,27 @@
+.body {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2vw 0 0 8vw;
+    text-align: left;
+    
+    h1{
+        font-family: adobe-garamond-pro, serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 100px;
+        line-height: 1;
+    }
+
+    h2{
+        line-height: 0.1;
+        font-size: 60px;
+    }
+
+    p{
+
+        line-height: 0.1;
+        font-size: 30px;
+    }
+}
