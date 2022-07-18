@@ -18,9 +18,11 @@ export default function Header(){
             <h1>T  I  E  N</h1>
             <section className='navSocial'>
                 <ul>
-                <IconButton aria-label="Example">
-                <a href=""><InstagramIcon fontSize="large"/></a>
-                </IconButton>
+                <a href="">
+                    <IconButton color="inherit">
+                        <InstagramIcon fontSize="large"/>
+                    </IconButton>
+                </a>
                     <a href=""><GitHubIcon fontSize="large"/></a>
                     <a href=""><LinkedInIcon fontSize="large"/></a>
                 </ul>

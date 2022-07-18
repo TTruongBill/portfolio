@@ -1,54 +1,41 @@
 .Head {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     color: white;
 
     .navApp{
-        margin-left: 80px;  
         font-size: 17px;
     }
     
     h1{
-        position: relative;
+        width: 30%;
     }
-    .navSocial{
+    
+    section{
+        width: 30%;
 
         ul{
             display: flex;
+            list-style: none;
             justify-content: center;
             align-items: center;
-            margin-right: 80px;  
-
+            margin: 0;  
+            padding: 0;
+    
             a{
                 margin: 30px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold; 
+                &:hover{
+                    color: rgb(148, 148, 148);
+                }
+    
             }
-
+            
         }
-        
     }
-
-    ul{
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        margin: 0;  
-        padding: 0;
-
-        li{
-            margin: 30px;
-        }
-        a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold; 
-            &:hover{
-                color: blue;
-            }
-
-        }
-        
-    }
+   
 }
