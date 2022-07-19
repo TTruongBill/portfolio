@@ -9,7 +9,6 @@ export default function Appli() {
       <div className="Appli">
         <Header/>
         <Body/>
-        <Footer/>
       </div>
   );
 }
