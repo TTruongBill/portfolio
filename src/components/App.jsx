@@ -1,13 +1,15 @@
 import './App.scss';
 import Header from './Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import AboutMe from '../pages/AboutMe';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
-import Nopage from '../pages/Nopage';
+import NoPage from '../pages/NoPage';
+import {useState} from 'react';
 
 export default function App() {
+  const [projects, setProjects] = useState([]);
 
   return (
       <div className="App">
@@ -15,9 +17,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/AboutMe" element={<AboutMe />} />
-            <Route path="/Projects" element={<Projects />} />
+            <Route path="/Projects" element={<Projects projects={projects} setProjects={setProjects}/>} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="*" element={<Nopage />} />
+            <Route path="*" element={<NoPage />} />
           </Routes>
       </div>
   );

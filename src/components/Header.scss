@@ -6,7 +6,7 @@
     color: white;
     width: 100vw;
     height: 10vh;
-    
+    animation: top-to-bottom 2s;
     .navApp{
         font-size: 17px;
     }
@@ -16,7 +16,7 @@
         text-align: center;
     }
     
-    section{
+    nav{
         width: 30%;
 
         ul{
@@ -41,4 +41,15 @@
         }
     }
    
+}
+
+@keyframes top-to-bottom {
+    0%{
+        transform: translateY(-11vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

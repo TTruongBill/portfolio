@@ -5,13 +5,21 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 import { Link } from 'react-router-dom';
 export default function Header(){
-    
+
+    function addClass(e){
+        let Home = document.querySelector("." + {e});
+        Home.style.animationName = "none";
+
+        requestAnimationFrame(() => {
+            Home.style.animationName = "";
+        });
+    }
     return(
         <div className='Head'>
-            <section className='navApp'>
+            <nav className='navApp'>
                 <ul>
                     <li>
-                        <Link to="/">HOME</Link>
+                        <Link to="/" onClick={home => addClass(home)}>HOME</Link>
                     </li>
                     <li>
                         <Link to="/aboutme">ABOUT ME</Link>
@@ -23,19 +31,33 @@ export default function Header(){
                         <Link to="/contact">CONTACT</Link>
                     </li>
                 </ul>
-            </section>
+            </nav>
             <h1>T  I  E  N</h1>
-            <section className='navSocial'>
+            <nav className='navSocial'>
                 <ul>
-                <a href="">
-                    <IconButton color="inherit">
-                        <InstagramIcon fontSize="large"/>
-                    </IconButton>
-                </a>
-                    <a href=""><GitHubIcon fontSize="large"/></a>
-                    <a href=""><LinkedInIcon fontSize="large"/></a>
+                    <li>
+                        <a href="https://www.instagram.com/k1polo/">
+                            <IconButton color="inherit">
+                                <InstagramIcon fontSize="large"/>
+                            </IconButton>
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="https://github.com/k1polo">
+                            <IconButton color="inherit">
+                                <GitHubIcon fontSize="large"/>
+                            </IconButton>
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="https://www.linkedin.com/in/tien-tien-3392a3240/">
+                            <IconButton color="inherit">
+                                <LinkedInIcon fontSize="large"/>
+                            </IconButton>
+                        </a>
+                    </li>       
                 </ul>
-            </section>
+            </nav>
         </div>
     )
 } 
