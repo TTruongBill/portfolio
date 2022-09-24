@@ -3,16 +3,33 @@
     flex-direction: row;
     justify-content: space-between;
     margin: auto 40px;
+    background-color: rgb(48, 48, 48);
+    padding: 10px 40px;  
+    align-items: center;
 }
 
 .right{
+    display: flex;
+    flex-direction: column;
     width: 40em;
 }
 
 .left{
-    width: 40em;
+    width: 50%;
 }
 
 img{
-    width:60em;
+    width:100%;
+}
+
+@media screen and (max-width: 769px){
+
+}
+@media screen and (min-width: 769px){
+
+    
+}
+
+@media screen and (min-width: 1800px){
+
 }

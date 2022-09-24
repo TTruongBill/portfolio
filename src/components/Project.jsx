@@ -1,6 +1,6 @@
 import './Project.scss';
 
-export default function Project({title, img, imgName, li, link, content}){
+export default function Project({title, img, imgName, link, content}){
 
     return(
         <section className='project'>
