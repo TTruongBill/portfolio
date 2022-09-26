@@ -1,21 +1,21 @@
 .project{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin: auto 40px;
+    margin: 40px;
     background-color: rgb(48, 48, 48);
     padding: 10px 40px;  
-    align-items: center;
+    align-items: flex-start;
 }
 
 .right{
     display: flex;
     flex-direction: column;
-    width: 40em;
+    width: 100%;
 }
 
 .left{
-    width: 50%;
+    width: 100%;
 }
 
 img{

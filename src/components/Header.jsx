@@ -17,8 +17,8 @@ export default function Header(){
     }
     return(
         <div className='Head'>
-            <label htmlFor="menu"> <MenuIcon className='menuIcon' fontSize='large'></MenuIcon> </label>
             <input type="checkbox" id="menu"/>
+            <label htmlFor="menu"> <MenuIcon className='menuIcon' fontSize='large'></MenuIcon> </label>
             <div className='menu'>
                 <h1>Other pages</h1>
                 <nav className='navAppMobile'>

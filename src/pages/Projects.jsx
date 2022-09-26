@@ -16,7 +16,7 @@ export default function Projects({projects, setProjects}){
 
     return(
         <div className='Portfolio'>
-            <h1> Projects</h1>
+            <h1>Projects</h1>
             <div className='Projects'>
                 {
                     projects.map(project => <Project key={project.id} {...project} />)
