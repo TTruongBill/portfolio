@@ -1,4 +1,9 @@
-.home {
+.home{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-left {
     display: flex;
     justify-content: left;
     flex-direction: column;
