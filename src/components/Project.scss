@@ -43,11 +43,28 @@ img{
     width:100%;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (min-width: 1040px){
+    .project{
+        flex-direction: row;
+        align-items: center;
 
+        .right{
+            padding-left: 20px;
+            justify-content: space-between;
+
+        }
+    }
+    
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1400px){
+    .project{
+        align-items: stretch;
 
+        .right p{
+            padding-top: 7em ;
+        }
+
+    }
     
 }
 
