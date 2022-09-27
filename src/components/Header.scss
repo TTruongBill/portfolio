@@ -126,6 +126,15 @@
             }
 
         }
+
+        .navSocialMobile button{
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        .navSocialMobile button:hover{
+            transform: scale(1.2);
+        }
     }
 
 }
@@ -157,6 +166,7 @@
         
         .menuIcon, .menu{
             display: none;
+
         }
         .navDesktop{
             display: flex;
@@ -189,18 +199,26 @@
                             font-weight: bold; 
                             
                             &:hover{
-                                color: rgb(148, 148, 148);
+                                text-decoration: underline;
+
                             }
                         }
                     }
     
-                    li a:visited{
+                    li a:visited, li a:visited button{
                         color: white;
                     }
-                    li a:visited button{
-                        color: white;
-                    }
+
                 }
+            }
+
+            .navSocial button{
+                transform: scale(1);
+                transition: transform 0.2s;
+            }
+
+            .navSocial button:hover{
+                transform: scale(1.2)
             }
         }
         
