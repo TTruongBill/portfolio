@@ -28,16 +28,16 @@ export default function Header(){
                 <nav className='navAppMobile'>
                     <ul>
                         <li>
-                            <Link to="/" onClick={home => addClass(home)}>Home</Link>
+                            <Link to="/" onClick={home => addClass(home)}>Accueil</Link>
                         </li>
                         <li>
-                            <Link to="/aboutme">About Me</Link>
+                            <Link to="/projects">À propos</Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link to="/projects">Projets</Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/projects">Contact</Link>
                         </li>
                     </ul>
                 </nav>
@@ -58,7 +58,7 @@ export default function Header(){
                         </a>
                     </li>    
                     <li>
-                        <a href="https://www.linkedin.com/in/tien-tien-3392a3240/">
+                        <a href="https://www.linkedin.com/in/tien-tien-truong/">
                             <IconButton color="inherit">
                                 <LinkedInIcon fontSize="large"/>
                             </IconButton>
@@ -71,16 +71,16 @@ export default function Header(){
                 <nav className='navApp'>
                     <ul>
                         <li>
-                            <Link to="/" onClick={home => addClass(home)}>HOME</Link>
+                            <Link to="/" onClick={home => addClass(home)}>ACCUEIL</Link>
                         </li>
                         <li>
-                            <Link to="/aboutme">ABOUT ME</Link>
+                            <Link to="/projects">À PROPOS</Link>
                         </li>
                         <li>
-                            <Link to="/projects">PROJECTS</Link>
+                            <Link to="/projects">PROJETS</Link>
                         </li>
                         <li>
-                            <Link to="/contact">CONTACT</Link>
+                            <Link to="/projects">CONTACT</Link>
                         </li>
                     </ul>
                 </nav>
@@ -102,7 +102,7 @@ export default function Header(){
                             </a>
                         </li>    
                         <li>
-                            <a href="https://www.linkedin.com/in/tien-tien-3392a3240/">
+                            <a href="https://www.linkedin.com/in/tien-tien-truong/">
                                 <IconButton color="inherit">
                                     <LinkedInIcon fontSize="large"/>
                                 </IconButton>

@@ -7,9 +7,9 @@ export default function Home(){
         <div className="home">
             <div className="home-left">
                 <section>
-                    <h2 className="hello">Hello, I'm</h2>
+                    <h2 className="hello">Bonjour, je suis</h2>
                     <h1>Tien Tien<br/>Truong</h1>
-                    <p>Freelance Web Developper</p>
+                    <p>Développeur Web</p>
                 </section>
                 <section className='buttonMe'>
                     <Button variant="outlined" color='inherit'>HIRE ME</Button>
