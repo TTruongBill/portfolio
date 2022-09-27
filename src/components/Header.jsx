@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 import { Link } from 'react-router-dom';
+import ClearIcon from "@mui/icons-material/Clear";
 export default function Header(){
 
     function addClass(e){
@@ -20,7 +21,10 @@ export default function Header(){
             <input type="checkbox" id="menu"/>
             <label htmlFor="menu"> <MenuIcon className='menuIcon' fontSize='large'></MenuIcon> </label>
             <div className='menu'>
+                <section className="top">
                 <h1>Other pages</h1>
+                <label htmlFor="menu"><ClearIcon className='clearIcon'fontSize='large'></ClearIcon></label>
+                </section>
                 <nav className='navAppMobile'>
                     <ul>
                         <li>

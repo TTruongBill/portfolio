@@ -6,12 +6,33 @@
     background-color: rgb(48, 48, 48);
     padding: 10px 40px;  
     align-items: flex-start;
+
+    a{
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+
+    a:hover{
+        color: rgb(42, 106, 226);
+    }
+
+    a:visited:hover{
+        color: rgb(42, 106, 226);
+    }
 }
 
 .right{
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 
 .left{
