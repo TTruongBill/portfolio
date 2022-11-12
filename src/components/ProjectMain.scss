@@ -1,0 +1,19 @@
+.ProjectsHome{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+}
+.project-bg{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 30vh;
+
+    img{
+        width: 100vw;
+    }
+    h1{
+        font-size: 10px;
+    }
+}

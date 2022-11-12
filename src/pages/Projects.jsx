@@ -4,15 +4,11 @@ import * as port from "../firebase/portfolio"
 import Project from '../components/Project';
 
 export default function Projects({projects, setProjects}){
-
-    
-
     useEffect(
         () => port.lireTout().then(
             theProjets => setProjects(theProjets)
         ), [setProjects]
     );
-
 
     return(
         <div className='Portfolio'>
